@@ -1,3 +1,4 @@
+import Experience from "./Experience/Experience.jsx";
 import ResumeHeader from "./ResumeHeader/ResumeHeader.jsx";
 import { styled } from "styled-components";
 
@@ -5,6 +6,7 @@ export default function Resume() {
   return (
     <ResumePage >
       <ResumeHeader />
+      <Experience />
     </ResumePage>
   );
 }
