@@ -27,7 +27,7 @@ const HeaderContainer = styled.header`
   text-align: center;
 
   & h1 {
-    margin: 0 0 1rem 0;
+    margin: 0;
   }
 `;
 
@@ -37,7 +37,7 @@ const HeaderNav = styled.nav`
     flex-wrap: wrap;
     gap: 4rem;
     padding: 0;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     max-height: 6rem;
     max-width: 70%;
     width: fit-content;
@@ -47,5 +47,9 @@ const HeaderNav = styled.nav`
     flex: 0 0 auto;
     font-size: 1.7rem;
     text-indent: -.4rem;
+  }
+
+  & li > a {
+    color: #000;
   }
 `;
