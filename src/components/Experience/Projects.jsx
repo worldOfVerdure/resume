@@ -1,10 +1,13 @@
+import Project from "./Project.jsx";
+import PROJECTS from "./helpers/projectData.js";
 import { styled } from "styled-components";
 
 export default function Projects() {
   return (
     <ProjectSection >
-      
-      
+      {PROJECTS.map(project => {
+        return <Project project={project} key={project.title} />
+      })}
     </ProjectSection>
   );
 }
